@@ -1,0 +1,31 @@
+{
+  "name": "bubba/boggarts",
+  "description": "Identify mischievous, invisible, and ambiguous Unicode whitespace characters (zero width spaces, no-break spaces, and similar).",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Bubba\\Boggarts\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Bubba Hines",
+      "email": "bubba@stechstudio.com"
+    }
+  ],
+  "require-dev": {
+    "pestphp/pest": "^1.22",
+    "laravel/pint": "^1.6",
+    "symfony/var-dumper": "^6.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "require": {
+    "nesbot/carbon": "^2.66",
+    "ext-mbstring": "*"
+  }
+}
