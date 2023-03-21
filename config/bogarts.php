@@ -402,5 +402,5 @@ return [
                 'test_string' => '[­] contains the test data.',
             ],
         ],
-    ]
+    ],
 ];

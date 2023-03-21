@@ -2,9 +2,9 @@
 
 namespace BubbaOps\Boggarts;
 
+use BubbaOps\Boggarts\Commands\BoggartsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BubbaOps\Boggarts\Commands\BoggartsCommand;
 
 class BoggartsServiceProvider extends PackageServiceProvider
 {

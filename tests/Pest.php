@@ -44,7 +44,7 @@ function config(): array
     return include 'config/bogarts.php';
 }
 
-function excise(): \Bubba\Boggarts\Excise
+function excise(): Bubba\Boggarts\Excise
 {
     return \Bubba\Boggarts\Excise::make(config: config());
 }
