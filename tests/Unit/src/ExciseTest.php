@@ -1,6 +1,6 @@
 <?php
 
-test('can make Excise service', function () {
+test('can make Excise service', function(){
     $excise = \Bubba\Boggarts\Excise::make(config: config());
     expect($excise)->toBeInstanceOf(\Bubba\Boggarts\Excise::class);
 });

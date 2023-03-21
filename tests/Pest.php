@@ -39,12 +39,12 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function config(): array
+function boggartConfig(): array
 {
     return include 'config/bogarts.php';
 }
 
 function excise(): Bubba\Boggarts\Excise
 {
-    return \Bubba\Boggarts\Excise::make(config: config());
+    return \Bubba\Boggarts\Excise::make(config: boggartConfig());
 }
