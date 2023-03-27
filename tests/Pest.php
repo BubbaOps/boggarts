@@ -1,6 +1,6 @@
 <?php
 
-use BubbaOps\Boggarts\Boggarts;
+use BubbaOps\Boggarts\Facades\Boggarts as BoggartsFacade;
 use BubbaOps\Boggarts\Tests\TestCase;
 
 /*
@@ -22,5 +22,5 @@ function boggartConfig(): array
 
 function excise(): BubbaOps\Boggarts\Boggarts
 {
-    return new Boggarts(config('boggarts'));
+    return BoggartsFacade::make(config('boggarts'));
 }

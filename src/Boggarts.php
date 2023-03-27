@@ -19,15 +19,16 @@ final class Boggarts
     protected string $input;
 
     public function __construct(
-        public readonly iterable $config
+        public ?iterable $config = null
     ) {
-        mb_regex_encoding($config['encoding']);
+        $this->config = $this->config ?? config('boggarts');
+        mb_regex_encoding($this->config['encoding']);
         $this->types = array_keys($this->config['bogies']);
     }
 
-    public static function make(iterable $config): Boggarts
+    public static function make(?iterable $config = null): Boggarts
     {
-        return new Excise($config);
+        return new Boggarts($config);
     }
 
     public function text(string $text): Boggarts
