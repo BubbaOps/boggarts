@@ -2,7 +2,6 @@
 
 namespace BubbaOps\Boggarts;
 
-use BubbaOps\Boggarts\Commands\BoggartsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,16 +16,17 @@ class BoggartsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('boggarts')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_boggarts_table')
-            ->hasCommand(BoggartsCommand::class);
+            ->hasConfigFile();
     }
 
     public function register()
     {
-        $this->app->bind('boggart', function () {
+        $this->app->bind('bubbaops.boggarts', function () {
             return new \BubbaOps\Boggarts\Boggarts(config('boggarts'));
+        });
+
+        $this->app->bind('bubbaops.boggarts.excise', function () {
+            return new \BubbaOps\Boggarts\Excise();
         });
 
         return parent::register();

@@ -60,7 +60,8 @@
         "BubbaOps\\Boggarts\\BoggartsServiceProvider"
       ],
       "aliases": {
-        "boggarts": "BubbaOps\\Boggarts\\Boggarts"
+        "bubbaops.boggarts": "BubbaOps\\Boggarts\\Boggarts",
+        "bubbaops.boggarts.excise": "BubbaOps\\Boggarts\\Excise"
       }
     }
   },

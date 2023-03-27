@@ -18,6 +18,6 @@ class Boggarts extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'boggart';
+        return 'bubbaops.boggarts';
     }
 }
