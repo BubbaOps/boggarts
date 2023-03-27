@@ -68,11 +68,4 @@ final class Boggarts
     {
         return $this->types;
     }
-
-    public function setTypes(array $types): Excise
-    {
-        $this->types = $types;
-
-        return $this;
-    }
 }

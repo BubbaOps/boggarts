@@ -60,7 +60,7 @@
         "BubbaOps\\Boggarts\\BoggartsServiceProvider"
       ],
       "aliases": {
-        "CondomanagerApi": "BubbaOps\\Boggarts\\Facades\\Boggarts"
+        "boggarts": "BubbaOps\\Boggarts\\Boggarts"
       }
     }
   },

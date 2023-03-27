@@ -13,6 +13,6 @@ class Boggarts extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \BubbaOps\Boggarts\Boggarts::class;
+        return 'boggart';
     }
 }

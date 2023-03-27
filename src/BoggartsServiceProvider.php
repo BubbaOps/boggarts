@@ -25,9 +25,10 @@ class BoggartsServiceProvider extends PackageServiceProvider
 
     public function register()
     {
-        return parent::register();
-        $this->app->singleton(\BubbaOps\Boggarts\Boggarts::class, function () {
+        $this->app->bind('boggart', function () {
             return new \BubbaOps\Boggarts\Boggarts(config('boggarts'));
         });
+
+        return parent::register();
     }
 }
