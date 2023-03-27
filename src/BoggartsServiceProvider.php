@@ -22,4 +22,12 @@ class BoggartsServiceProvider extends PackageServiceProvider
             ->hasMigration('create_boggarts_table')
             ->hasCommand(BoggartsCommand::class);
     }
+
+    public function register()
+    {
+        return parent::register();
+        $this->app->singleton(Boggarts::class, function () {
+            return new Boggarts(config('boggarts'));
+        });
+    }
 }

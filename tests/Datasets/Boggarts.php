@@ -1,6 +1,6 @@
 <?php
 
-$pixies = config();
+$pixies = boggartConfig();
 
 function generate(array $boggies): array
 {
