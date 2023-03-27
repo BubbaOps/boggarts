@@ -61,7 +61,7 @@ php artisan vendor:publish --tag="boggarts-config"
 ## Usage
 
 ```php
-$text = "    Just imagine this text full of mean nasty boggarts invisible to you!       ";
+$text = "    Just imagine this text full of me an nasty boggarts invisible to you!       ";
 $text = \BubbaOps\Boggarts\Facades\Excise::clip($text);
 // Results "Just imagine this text full of mean nasty boggarts invisible to you!" 
 // All cleaned up and ready to go our for a fun night.
