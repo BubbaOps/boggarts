@@ -7,7 +7,12 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \BubbaOps\Boggarts\Boggarts
  *
- * @method static Boggarts make(iterable $config):
+ * @property string $output
+ *
+ * @method static \BubbaOps\Boggarts\Boggarts make(iterable $config):
+ * @method static \BubbaOps\Boggarts\Boggarts text(string $text)
+ * @method static string finalize()
+ * @method static array getTypes()
  */
 class Boggarts extends Facade
 {
