@@ -1,4 +1,5 @@
 # Laughing at Boggarts
+
 > _To repel or destroy a boggart, it must be laughed at._ <br>
 > ~ Harry Potter and the Prisoner of Azkaban
 ____
@@ -41,7 +42,6 @@ just like it better. That movie gave me nightmares as a kid, and I don't want an
 * Has an awesome name with references to current pop culture!
 * Solves a growing security issue for you.
 
-
 ## Installation
 
 You can install the package via composer:
@@ -51,24 +51,20 @@ composer require bubbaops/boggarts
 ```
 
 #### Laravel Projects
+
 You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="boggarts-config"
 ```
 
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```php
-$boggarts = new BubbaOps\Boggarts();
-echo $boggarts->echoPhrase('Hello, BubbaOps!');
+$text = "    Just imagine this text full of mean nasty boggarts invisible to you!       ";
+$text = \BubbaOps\Boggarts\Facades\Excise::clip($text);
+// Results "Just imagine this text full of mean nasty boggarts invisible to you!" 
+// All cleaned up and ready to go our for a fun night.
 ```
 
 ## Testing
